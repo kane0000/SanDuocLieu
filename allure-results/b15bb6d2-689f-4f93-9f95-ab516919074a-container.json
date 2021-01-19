@@ -1,0 +1,1 @@
+{"uuid":"b15bb6d2-689f-4f93-9f95-ab516919074a","name":"pom.Sanduoclieu.user.LoginPage","children":["2fa4d24b-b562-4c12-b6cf-9420be81c8cf"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1610870667806,"stop":1610870675320}],"afters":[],"links":[],"start":1610870667786,"stop":1610870740447}

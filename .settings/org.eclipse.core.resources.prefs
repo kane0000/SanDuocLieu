@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/main/java/PageUI/Sanduoclieu/EmailPageUI.java=UTF-8
+encoding//src/main/java/PageUI/Sanduoclieu/HomePageUI.java=UTF-8
+encoding//src/main/java/PageUI/Sanduoclieu/LoginPageUI.java=UTF-8
+encoding//src/main/java/PageUI/Sanduoclieu/RegisterPageUI.java=UTF-8
+encoding//src/main/java/commons/AbsTractPageUI.java=UTF-8
+encoding//src/main/java/commons/AbstractPage.java=UTF-8
+encoding//src/main/java/commons/AbstractTest.java=UTF-8
+encoding//src/test/java/pom/Sanduoclieu/user/HomePage.java=UTF-8
+encoding//src/test/java/pom/Sanduoclieu/user/LoginPage.java=UTF-8
+encoding//src/test/java/pom/Sanduoclieu/user/RegisterPage.java=UTF-8

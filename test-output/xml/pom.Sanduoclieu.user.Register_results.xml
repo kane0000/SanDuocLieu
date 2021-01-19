@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on CHROME"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.615">
+  <properties />
+  
+  
+            <testcase name="TC_03_Register_Product_Sell" time="8.615" classname="pom.Sanduoclieu.user.Register" />
+      
+</testsuite>

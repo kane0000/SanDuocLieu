@@ -1,0 +1,16 @@
+1606831343087	geckodriver	INFO	Listening on 127.0.0.1:29640
+1606831344512	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-private" "-foreground" "-no-remote" "-profile" "C:\\Users\\SHC\\AppData\\Local\\Temp\\rust_mozprofileJ5dpwy"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:27:11
+isBrowserPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:47:19
+loadURI@resource://gre/modules/RemoteWebNavigation.jsm:73:51
+loadURI/<@chrome://global/content/elements/browser-custom-element.js:876:28
+_wrapURIChangeCall@chrome://global/content/elements/browser-custom-element.js:807:9
+loadURI@chrome://global/content/elements/browser-custom-element.js:875:12
+render/<@chrome://mozapps/content/extensions/aboutaddons.js:2349:15
+render@chrome://mozapps/content/extensions/aboutaddons.js:2308:11
+1606831348843	Marionette	INFO	Listening on port 58234
+1606831348932	Marionette	WARN	TLS certificate errors will be ignored for this session

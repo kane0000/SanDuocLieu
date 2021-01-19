@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sanduoclieu" parallel="false">
+
+<!-- 	<parameter name="url" value="https://yduoccotruyen.com.vn/" /> -->
+	<parameter name="url" value="https://www.mailinator.com/v3/#/#inboxpane" />
+	
+	
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="reportConfig.ExtentListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.ReportNGListener" />
+	</listeners>
+
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+
+<!-- 			<class name="pom.Sanduoclieu.user.RegisterPage" /> -->
+			<class name="pom.Sanduoclieu.user.LoginPage" />
+<!-- 			<class name="pom.Sanduoclieu.user.HomePage" /> -->
+		</classes>
+	</test>
+
+</suite> 
