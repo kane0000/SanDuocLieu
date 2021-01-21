@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="15.864">
+           time="15.137">
   <properties />
   
   
-            <testcase name="TC_Register_Product_Sell_At_Depot_Of_Enterprise" time="15.864" classname="pom.Sanduoclieu.user.HomePage" />
+            <testcase name="TC_Register_Product_Sell_At_Depot_Of_Enterprise" time="15.137" classname="pom.Sanduoclieu.user.HomePage" />
       
 </testsuite>

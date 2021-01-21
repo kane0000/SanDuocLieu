@@ -160,7 +160,7 @@ public abstract class AbstractPage {
 	public void sendkeyToElement(WebDriver driver, String xpathValue, String value) {
 //		highlightElement(driver, xpathValue);
 		element = find(driver, xpathValue);
-		// element.clear();
+//		 element.clear();
 		element.sendKeys(value);
 	}
 
@@ -725,7 +725,6 @@ public abstract class AbstractPage {
 	public void clickToLoginButton(WebDriver driver) {
 		waitElementClickable(driver, AbstractPageUI.LOGIN_BUTTON);
 		clickToElement(driver, AbstractPageUI.LOGIN_BUTTON);
-
 	}
 
 	private Alert alert;

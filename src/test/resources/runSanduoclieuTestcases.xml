@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Sanduoclieu" parallel="false">
 
-<!-- 	<parameter name="url" value="https://yduoccotruyen.com.vn/" /> -->
-	<parameter name="url" value="https://www.mailinator.com/v3/#/#inboxpane" />
+	<parameter name="url" value="https://yduoccotruyen.com.vn/" />
+<!-- 	<parameter name="url" value="https://www.mailinator.com/v3/#/#inboxpane" /> -->
 	
 	
 	<listeners>
@@ -19,8 +19,8 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 
-<!-- 			<class name="pom.Sanduoclieu.user.RegisterPage" /> -->
-			<class name="pom.Sanduoclieu.user.LoginPage" />
+			<class name="pom.Sanduoclieu.user.RegisterPage" />
+<!-- 			<class name="pom.Sanduoclieu.user.LoginPage" /> -->
 <!-- 			<class name="pom.Sanduoclieu.user.HomePage" /> -->
 		</classes>
 	</test>

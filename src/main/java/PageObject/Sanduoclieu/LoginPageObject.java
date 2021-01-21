@@ -2,7 +2,6 @@ package PageObject.Sanduoclieu;
 
 import org.openqa.selenium.WebDriver;
 
-import PageUI.Sanduoclieu.EmailPageUI;
 import PageUI.Sanduoclieu.LoginPageUI;
 import commons.AbstractPage;
 
@@ -89,7 +88,7 @@ public class LoginPageObject extends AbstractPage {
 	public void inputToPasswordNew(String pass) {
 		waitElementVisible(driver, LoginPageUI.PASSWORD_NEW_FORGOT);
 		sendkeyToElement(driver, LoginPageUI.PASSWORD_NEW_FORGOT, pass);
-		
+
 	}
 
 	public void inputToConfirmPasswordNew(String pass) {

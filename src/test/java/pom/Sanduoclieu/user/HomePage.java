@@ -21,16 +21,17 @@ public class HomePage extends AbstractTest {
  LoginPageObject loginPage;
  RegisterPageObject registerPage;
  EmailPageObject informationPage;
- String account,newPassword,document, customerName;
+ String account,newPassword,document, customerName, address;
  
     @Parameters({"browser","url"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
 		driver = getBrowserDriver(browserName, appUrl);
-		account = "SDL18159938";
-		newPassword = "111111";
+		account = "SDL73792820";
+		newPassword = "222222";
 		document = "123.png";
-		customerName = "Nguyen Van D";
+		customerName = "Nguyen Van M";
+		address = " 22 Lê Trọng Tấn";
     }
 //    @Test
     public void TC_Register_Product_Sell_At_Depot_of_San() {
@@ -79,7 +80,7 @@ public class HomePage extends AbstractTest {
     	  homePage.inputToProvince("Hà Nội");
     	  homePage.inputToDistrict("Thanh Xuân");
     	  homePage.inputToCommune("Khương Mai");
-    	  homePage.inputToCustomerAddress("163 Lê Trọng Tấn");
+    	  homePage.inputToCustomerAddress(address);
     	  homePage.clickToHomeDepot("Nhà kho");
     	  homePage.clickToSendButton("Gửi");
     	  homePage.clickToAdress(customerName);
@@ -92,9 +93,9 @@ public class HomePage extends AbstractTest {
     	  homePage.clickToRegisterButton();
     }
 
-//  @AfterClass
-//	  public void afterClass() {
-//			removeDriver();
-//  }
+  @AfterClass
+	  public void afterClass() {
+			removeDriver();
+  }
 
 }

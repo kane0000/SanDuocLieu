@@ -48,7 +48,7 @@ public class RegisterPage extends AbstractTest {
 		
     }
     
-// @Test
+ @Test
   public void TC_Register_Enterprise_Buy() {
 	   homePage.clickToLoginButton(driver);
 	  loginPage= PageGeneratorManager.getLoginPage(driver);
@@ -60,23 +60,17 @@ public class RegisterPage extends AbstractTest {
 	 
 	  registerPage.clickToVerificationButton();
 	  sleepInSecond(1);
-	 
-	  getDriver().get("https://www.mailinator.com/v3/#/#inboxpane");
+	  registerPage.openPageUrl(driver,"https://www.mailinator.com/v3/#/#inboxpane");
 	  sleepInSecond(1);
 	  emailPage =PageGeneratorManager.getEmailPage(driver);
 	  emailPage.inputToEmailTextbox(email);
 	  System.out.println(email);
 	  emailPage.clickToGoButton();
 	  
-	  driver.findElement(By.xpath("//a[contains(text(),'Sàn dươc liệu')]/parent::td/preceding-sibling::td[1]")).click();
-	  sleepInSecond(1);
-	  driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='msg_body']")));
-	  sleepInSecond(1);
-	  text = driver.findElement(By.xpath("//td[@align='center']//tr[6]")).getText();
-	  driver.switchTo().defaultContent();
-	  sleepInSecond(1);
+	  emailPage.clickToVerificationCode();
+	  text = emailPage.getTextToVerificationCode();
 	  
-	  getDriver().get("https://yduoccotruyen.com.vn/register/step1");
+	  emailPage.openPageUrl(driver, "https://yduoccotruyen.com.vn/register/step1");
 	  registerPage= PageGeneratorManager.getRegisterPage(driver);
 	  registerPage.inputToEmailTextbox(email+"@mailinator.com");
 	  registerPage.inputToVerification(text);
@@ -121,35 +115,29 @@ public class RegisterPage extends AbstractTest {
 	  registerPage.clickToFinishButton();
 	  verifyTrue(registerPage.isMessageSuccess());
   }
- @Test
+// @Test
  public void TC_Register_Enterprise_Sell() {
 	   homePage.clickToLoginButton(driver);
 	  loginPage= PageGeneratorManager.getLoginPage(driver);
 	  loginPage .clickToLoginButton(driver);
 	  registerPage= PageGeneratorManager.getRegisterPage(driver);
 	  registerPage.inputToEmailTextbox(email+"@mailinator.com");
-	  value = driver.findElement(By.name("emailContactPerson")).getAttribute("value");
-	  
 	 
 	  registerPage.clickToVerificationButton();
 	  sleepInSecond(1);
 	 
-	  getDriver().get("https://www.mailinator.com/v3/#/#inboxpane");
+	  registerPage.openPageUrl(driver,"https://www.mailinator.com/v3/#/#inboxpane");
 	  sleepInSecond(1);
 	  emailPage =PageGeneratorManager.getEmailPage(driver);
 	  emailPage.inputToEmailTextbox(email);
 	  System.out.println(email);
 	  emailPage.clickToGoButton();
 	  
-	  driver.findElement(By.xpath("//a[contains(text(),'Sàn dươc liệu')]/parent::td/preceding-sibling::td[1]")).click();
-	  sleepInSecond(1);
-	  driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='msg_body']")));
-	  sleepInSecond(1);
-	  text = driver.findElement(By.xpath("//td[@align='center']//tr[6]")).getText();
+	  emailPage.clickToVerificationCode();
+	  text = emailPage.getTextToVerificationCode();
 	  driver.switchTo().defaultContent();
-	  sleepInSecond(1);
 	  
-	  getDriver().get("https://yduoccotruyen.com.vn/register/step1");
+	  emailPage.openPageUrl(driver, "https://yduoccotruyen.com.vn/register/step1");
 	  registerPage= PageGeneratorManager.getRegisterPage(driver);
 	  registerPage.inputToEmailTextbox(email+"@mailinator.com");
 	  registerPage.inputToVerification(text);
